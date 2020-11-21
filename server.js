@@ -10,12 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static(path.join(__dirname,"./public"), {extensions: "html"}));
-
-
-
-
-app.listen(PORT, () => 
-    console.log(`Server listening at http://localhost:${PORT}`));
+require("./routes/apiRoutes")(app)
 
 fs.readFile("db.json", (error) => {
     if (error) {
@@ -24,6 +19,9 @@ fs.readFile("db.json", (error) => {
         console.log("Read notes file");
     }
 });
+
+app.listen(PORT, () => 
+    console.log(`Server listening at http://localhost:${PORT}`));
 
 
 
