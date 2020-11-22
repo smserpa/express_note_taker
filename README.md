@@ -1,4 +1,4 @@
-# Express Notes App
+# Express Notes Application
 
 ## Description
 
@@ -27,13 +27,16 @@ npm install
 
 ## Usage
 
-To access the application locally run the following commands in the terminal:
+To access the application locally run the following command in terminal:
 
 ```
 npm start
 ```
 
 The application is also deployed on heroku:
+
+[Express Notes Application](https://express-note-taking-app-1.herokuapp.com/)
+
 
 ## License
 
